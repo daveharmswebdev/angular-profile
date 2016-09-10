@@ -1,0 +1,35 @@
+$rgba-primary-0: rgba( 45, 68,113,1);	// Main Primary color */
+$rgba-primary-1: rgba(119,136,170,1); // lightest
+$rgba-primary-2: rgba( 78, 99,142,1); // lighter
+$rgba-primary-3: rgba( 21, 43, 85,1); // darker
+$rgba-primary-4: rgba(  6, 23, 57,1); // darkest
+
+// fonts
+$lobster: 'Lobster', cursive;
+$poppins: 'Poppins', sans-serif;
+
+
+// navbar
+.style--navbar {
+	background-color: $rgba-primary-4;
+	height: 15vh;
+	a {
+		font-family: $poppins;
+	}
+}
+
+// splash
+footer {
+	height: 15vh;
+	background-color: $rgba-primary-3;
+}
+.canyon {
+	background-image: url('../images/canyons.jpeg');
+	border: 0.1px solid black;
+	background-size: cover;
+	height: 70vh;
+	font-family: $lobster;
+	h1 {
+		margin: 2rem;
+	}
+}

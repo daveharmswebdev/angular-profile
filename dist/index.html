@@ -2,17 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Document</title>
+  <link rel="stylesheet" href="./lib/materialize/dist/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-	<div ng-view></div>
-
+<body ng-app="devprofile">
+	<div ng-include="'views/navbar.html'"></div>
+  <div ng-view></div>
   <script src="./lib/jquery/dist/jquery.min.js"></script>
   <script src="./lib/angular/angular.min.js"></script>
   <script src="./lib/angular-route/angular-route.min.js"></script>
   <script src="./lib/materialize/dist/js/materialize.min.js"></script>
 
   <!-- angular files -->
-  <script src="js/main.js"></script>
+  <script src="./js/main.js"></script>
+  <!-- controllers -->
+  <script src="./js/controller/splashCtrl.js"></script>
+  <script src="./js/controller/aboutCtrl.js"></script>
+  <script src="./js/controller/blogCtrl.js"></script>
+  <script src="./js/controller/contactCtrl.js"></script>
+  <script src="./js/controller/projectsCtrl.js"></script>
+  <script src="./js/controller/navbarCtrl.js"></script>
 </body>
 </html>

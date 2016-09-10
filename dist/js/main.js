@@ -2,6 +2,8 @@
 
 const app = angular.module('devprofile', ['ngRoute'])
 
+console.log('hello main.js')
+
 app.config(function($routeProvider) {
 
   $routeProvider
@@ -9,31 +11,23 @@ app.config(function($routeProvider) {
     templateUrl: './views/splash.html',
     controller: 'splashCtrl'
   })
-  // .when('/profile', {
-  //   templateUrl: './views/customerProfile.html',
-  //   controller: 'profileCtrl'
-  // })
-  // .when('/order', {
-  //   templateUrl: './views/order.html',
-  //   controller: 'orderCtrl'
-  // })
-  // .when('/test', {
-  //   templateUrl: './views/test.html',
-  //   controller: 'testCtrl'
-  // })
-  // .when('/checkout', {
-  //   templateUrl: './views/checkout.html',
-  //   controller: 'checkoutCtrl'
-  // })
-  // .when('/account', {
-  //   templateUrl: './views/account.html',
-  //   controller: 'accountCtrl'
-  // })
-  // .when('/endOfDay', {
-  //   templateUrl: './views/endOfDay.html',
-  //   controller: 'eodCtrl'
-  // })
+  .when('/about', {
+    templateUrl: './views/about.html',
+    controller: 'aboutCtrl'
+  })
+  .when('/blog', {
+    templateUrl: './views/blog.html',
+    controller: 'blogCtrl'
+  })
+  .when('/contact', {
+    templateUrl: './views/contact.html',
+    controller: 'contactCtrl'
+  })
+  .when('/projects', {
+    templateUrl: './views/projects.html',
+    controller: 'projectsCtrl'
+  })
   .otherwise({
     redirectTo: '/'
-  });
-});
+  })
+})
