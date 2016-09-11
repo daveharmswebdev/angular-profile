@@ -11,10 +11,19 @@ $poppins: 'Poppins', sans-serif;
 
 // navbar
 .style--navbar {
-	background-color: $rgba-primary-4;
+	background-color: $rgba-primary-1;
 	height: 15vh;
 	a {
+		font-family: $lobster;
+		font-size: 2rem;
+		color: white;
+	}
+}
+
+.side-nav {
+	a {
 		font-family: $poppins;
+		color: black;
 	}
 }
 
@@ -25,11 +34,36 @@ footer {
 }
 .canyon {
 	background-image: url('../images/canyons.jpg');
-	border: 0.1px solid black;
+	border: 0.01px solid black;
 	background-size: cover;
 	height: 70vh;
 	font-family: $lobster;
 	h1 {
 		margin: 2rem;
+	}
+}
+
+// about
+.about {
+	// max-width: 600px;
+	margin: 1rem auto; 
+	text-align: center;
+	img {
+		display: block;
+		width: 20rem;
+		margin: 1rem auto;
+	}
+	h1 {
+		font-family: $lobster;
+	}
+	.row {
+		margin: 0 auto;
+		max-width: 90vw;
+		h2 {
+			font-family: $lobster;
+		}
+		p {
+			font-family: $poppins;
+		}
 	}
 }
