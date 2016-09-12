@@ -30,16 +30,33 @@ $poppins: 'Poppins', sans-serif;
 // splash
 footer {
 	height: 15vh;
-	background-color: $rgba-primary-3;
+	background-color: $rgba-primary-4;
 }
 .canyon {
 	background-image: url('../images/canyons.jpg');
-	border: 0.01px solid black;
+	border: 1px solid black;
 	background-size: cover;
-	height: 70vh;
+	height: 85vh;
 	font-family: $lobster;
 	h1 {
 		margin: 2rem;
+	}
+}
+.tech {
+	background-color: $rgba-primary-3;
+	height: 100%;
+	padding-bottom: 3rem;
+	.holder {
+		margin-top: 3rem;
+		width: 200px;
+		height: 120px;
+		padding: 10px;
+		img {
+			display: block;
+			margin: 0 auto;
+			width: auto;
+			height: 100%;
+		}
 	}
 }
 
