@@ -11,6 +11,7 @@ $poppins: 'Poppins', sans-serif;
 
 // navbar
 .style--navbar {
+	padding: 1rem;
 	background-color: $rgba-primary-1;
 	height: 10vh;
 	a {
@@ -113,6 +114,10 @@ $poppins: 'Poppins', sans-serif;
 		width: auto;
 		height: 100%;
 	}
+}
+
+.project--title {
+	font-family: $poppins;
 }
 
 .project--description {
