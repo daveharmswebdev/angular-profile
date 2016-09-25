@@ -8,23 +8,23 @@ app.config(function($routeProvider) {
 
   $routeProvider
   .when('/', {
-    templateUrl: './views/splash.html',
+    templateUrl: './splash.html',
     controller: 'splashCtrl'
   })
   .when('/about', {
-    templateUrl: './views/about.html',
+    templateUrl: './about.html',
     controller: 'aboutCtrl'
   })
   .when('/blog', {
-    templateUrl: './views/blog.html',
+    templateUrl: './blog.html',
     controller: 'blogCtrl'
   })
   .when('/contact', {
-    templateUrl: './views/contact.html',
+    templateUrl: './contact.html',
     controller: 'contactCtrl'
   })
   .when('/projects', {
-    templateUrl: './views/projects.html',
+    templateUrl: './projects.html',
     controller: 'projectsCtrl'
   })
   .otherwise({
